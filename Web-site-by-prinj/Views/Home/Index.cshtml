@@ -1,7 +1,21 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Главная страница";
 }
+<style type="text/css">
+    .catalog-column ul li {
+        width: 100%;
+        float: left;
+        padding: 2px 0;
+        position: relative
+    }
 
+    .bukva {
+        margin-left: -19px;
+        position: absolute;
+        color: #e67a7d;
+        font-weight: bold
+    }
+</style>
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -9,86 +23,125 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
+        
+        <div class="item active" style="max-height:300px">
+            <img src="~/images/first.jpg" alt="У нас можно приобрести любую деталь" class="img-responsive" />
             <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
+                <p class="text-info">
+                    У нас можно приобрести любую деталь, на любой автомобиль!
                 </p>
             </div>
         </div>
-        <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
+        
+        <div class="item" style="max-height:300px">
+            <img src="~/images/time.jpg" alt="Мы работаем быстро" class="img-responsive" />
             <div class="carousel-caption" role="option">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
+                <p class="text-info">
+                    Мы быстро доставляем приобретенный товар, работаем без выходных!
                 </p>
             </div>
         </div>
-        <div class="item">
-            <img src="~/images/banner3.svg" alt="Microsoft Azure" class="img-responsive" />
+        
+        <div class="item" style="max-height:300px">
+            <img src="~/images/carcrash.jpg" alt="Хрупкие детали всегда прибывают в целости" class="img-responsive" />
             <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
+                <p class="text-info">
+                    Заказанные стекла придут в целостности и сохранности, ведь у нас самая бережная доствка товара!
                 </p>
             </div>
         </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
+<div class="form-group">
+    <br />
+    <div class="col-md-12">
+
+        <div class="top-r">
+            <div class="catalog-column col-md-2">
+                <ul>
+                    <li><span class="bukva">A </span><a href="/Catalog/Global/Cars/Acura">Acura</a></li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Alfa_Romeo">Alfa Romeo</a></li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Audi">Audi</a></li>
+                    <li><span class="bukva">B</span><a href="/Catalog/Global/Cars/BMW">BMW</a> </li>
+                    <li><span class="bukva">C </span><a href="/Catalog/Global/Cars/Cadillac">Cadillac</a></li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Chery">Chery</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Chevrolet">Chevrolet</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Chrysler">Chrysler</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Citroen">Citroen</a> </li>
+                </ul>
+            </div>
+            <div class="catalog-column col-md-2">
+                <ul>
+                    <li><span class="bukva">D</span><a href="/Catalog/Global/Cars/Daewoo">Daewoo</a></li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Dodge">Dodge</a> </li>
+                    <li><span class="bukva">F</span><a href="/Catalog/Global/Cars/Fiat">Fiat</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Ford">Ford</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Ford_USA">Ford USA</a> </li>
+                    <li><span class="bukva">G</span><a href="/Catalog/Global/Cars/Geely">Geely</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Great_Wall">Great Wall</a> </li>
+                    <li><span class="bukva">H</span><a href="/Catalog/Global/Cars/Honda">Honda</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Hyundai">Hyundai</a> </li>
+                </ul>
+            </div>
+            <div class="catalog-column col-md-2">
+                <ul>
+                    <li><span class="bukva">I </span><a href="/Catalog/Global/Cars/Infiniti">Infiniti</a> </li>
+                    <li><span class="bukva">J </span><a href="/Catalog/Global/Cars/Jaguar">Jaguar</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Jeep">Jeep</a> </li>
+                    <li><span class="bukva">K </span><a href="/Catalog/Global/Cars/Kia">Kia</a> </li>
+                    <li><span class="bukva">L </span><a href="/Catalog/Global/Cars/Land_Rover">Land Rover</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Lexus">Lexus</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Lifan">Lifan</a> </li>
+                    <li><span class="bukva">M </span><a href="/Catalog/Global/Cars/Mazda">Mazda</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Mercedes">Mercedes</a> </li>
+                </ul>
+            </div>
+            <div class="catalog-column col-md-2">
+                <ul>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/MINI">MINI</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Mitsubishi">Mitsubishi</a> </li>
+                    <li><span class="bukva">N </span><a href="/Catalog/Global/Cars/Nissan">Nissan</a> </li>
+                    <li><span class="bukva">O </span><a href="/Catalog/Global/Cars/Opel">Opel</a> </li>
+                    <li><span class="bukva">P </span><a href="/Catalog/Global/Cars/Peugeot">Peugeot</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Pontiac">Pontiac</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Porsche">Porsche</a> </li>
+                    <li><span class="bukva">R </span><a href="/Catalog/Global/Cars/Renault">Renault</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Rover">Rover</a> </li>
+                </ul>
+            </div>
+            <div class="catalog-column col-md-2">
+                <ul>
+                    <li><span class="bukva">S </span><a href="/Catalog/Global/Cars/Saab">Saab</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Seat">Seat</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Skoda">Skoda</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Smart">Smart</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Ssangyong">Ssangyong</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Subaru">Subaru</a> </li>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Suzuki">Suzuki</a> </li>
+                    <li><span class="bukva">T </span><a href="/Catalog/Global/Cars/Toyota">Toyota</a> </li>
+                    <li><span class="bukva">V </span><a href="/Catalog/Global/Cars/Volkswagen">Volkswagen</a> </li>
+                </ul>
+            </div>
+            <div class="catalog-column col-md-2">
+                <ul>
+                    <li><span class="bukva"></span><a href="/Catalog/Global/Cars/Volvo">Volvo</a> </li>
+                    <li><span class="bukva">В</span><a href="/Catalog/Global/Cars/ВАЗ">ВАЗ</a> </li>
+                    <li><span class="bukva">З</span><a href="/Catalog/Global/Cars/ЗАЗ">ЗАЗ</a> </li>
+                    <li><span class="bukva">У</span><a href="/Catalog/Global/Cars/УАЗ">УАЗ</a> </li>
+                </ul>
+            </div>
+            <div style="padding-top:4px;float:left">
+                <a style="color:gray" href="/Catalog/Global/">Все марки</a>
+            </div><div class="clearfix"></div>
+        </div>
     </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
-    </div>
+
 </div>

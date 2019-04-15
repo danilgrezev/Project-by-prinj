@@ -28,6 +28,20 @@ body {
     margin: 15px;
 }
 
+.catalog-column ul li {
+    width: 100%;
+    float: left;
+    padding: 2px 0;
+    position: relative
+}
+
+.bukva {
+    margin-left: -19px;
+    position: absolute;
+    color: #e67a7d;
+    font-weight: bold
+}
+
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
     /* Hide captions */
